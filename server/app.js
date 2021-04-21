@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const path = require('path');
 const routes = require('./routes');
 const errorHandler = require('./middleware/errorHandler');
+const session=require ('express-session')
 
 require('dotenv').config({ path: __dirname + '/.env' });
 
