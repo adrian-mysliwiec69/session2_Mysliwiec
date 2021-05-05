@@ -1,7 +1,7 @@
 <template>
   <div class="container d-flex flex-column min-vh-100">
     <h1 class="text-center mt-3">Welcome {{ user.name }}</h1>
-    <div v-if="user.name.length == 0" class="d-flex flex-column">
+    <div v-if="user.name == null" class="d-flex flex-column">
       <div class="mx-auto">
         <router-link to="/login">Login</router-link> |
         <router-link to="/register">Register</router-link>

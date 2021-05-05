@@ -45,6 +45,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
@@ -57,7 +58,7 @@ export default {
   methods: {
     async register() {
       let result = await axios({
-        method: "POST",
+        method: "post",
         url: "/register",
         "content-type": "application/json",
         data: {
